@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap');</style>
+  </defs>
+  <g id="bear-mark" transform="translate(10,10)">
+    <g id="head" transform="translate(0,12)">
+      <circle cx="28" cy="28" r="24" fill="#F0CBA6" stroke="#D89D6A" stroke-width="2"/>
+      <circle cx="14" cy="14" r="8" fill="#F0CBA6"/>
+      <circle cx="42" cy="14" r="8" fill="#F0CBA6"/>
+      <circle cx="22" cy="28" r="4" fill="#6B3F2B"/>
+      <circle cx="34" cy="28" r="4" fill="#6B3F2B"/>
+    </g>
+  </g>
+  <text x="80" y="70" font-family="Fredoka, system-ui, sans-serif" font-weight="700" font-size="48" fill="#0b1220">Little</text>
+  <text x="240" y="70" font-family="Fredoka, system-ui, sans-serif" font-weight="700" font-size="48" fill="#f97316">Bear</text>
+</svg>

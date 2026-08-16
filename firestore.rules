@@ -1,0 +1,44 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return signedIn() && request.auth.token.email == "admin@littlebear.com";
+    }
+
+    match /products/{productId} {
+      allow read: if true;
+      allow create, delete: if isAdmin();
+
+      // Admin can change anything. A signed-in customer may only touch
+      // the "stock" field, and only to decrease it (used during checkout).
+      allow update: if isAdmin() || (
+        signedIn() &&
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(["stock"]) &&
+        request.resource.data.stock <= resource.data.stock &&
+        request.resource.data.stock >= 0
+      );
+    }
+
+    match /orders/{orderId} {
+      allow create: if signedIn() && request.resource.data.customerId == request.auth.uid;
+      allow read, update, delete: if isAdmin();
+    }
+
+    match /messages/{messageId} {
+      // Public Contact form submission only.
+      allow create: if
+        request.resource.data.name is string &&
+        request.resource.data.email is string &&
+        request.resource.data.message is string &&
+        request.resource.data.status == "unread" &&
+        request.resource.data.createdAt is timestamp;
+
+      // Customer messages are private to the administrator.
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}
