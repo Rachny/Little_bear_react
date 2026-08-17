@@ -24,9 +24,10 @@ export default function About({ cartCount = 0 }) {
               mother's wish
             </h1>
             <p className="text-stone-500 text-lg leading-relaxed max-w-md">
-              LittleBear began in a small workshop, when founder Rachny HON couldn't find a toy soft enough, safe
-              enough, and beautiful enough for her newborn. So she made one herself — and everything grew from
-              there.
+              LittleBear began with a simple dream: to create soft, adorable, and comforting toys that bring happiness 
+              to everyone. What started as a small idea grew into a cozy little world filled with cuddly bears, 
+              bunnies, kitties, and special gifts. Today, LittleBear is all about sharing warmth, joy, and a 
+              little bit of magic through every toy we offer.
             </p>
           </div>
           <div className="flex justify-center">
@@ -46,17 +47,18 @@ export default function About({ cartCount = 0 }) {
           <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-6">
             <h2 className="font-bold text-lg text-stone-900 mb-3">A small stitch at a time</h2>
             <p className="text-sm text-stone-500 leading-relaxed">
-              What started as a single homemade bear for a nursery quickly caught the attention of friends and
-              neighbors. Rachny prioritized strict quality rules: zero plastics, 100% traceably-sourced organic
-              cotton threads, and natural plant extracts for rich safe coloring dyes.
+              What started as a simple idea to create adorable and comforting soft toys quickly grew into LittleBear. 
+              Each toy is chosen with care, from its soft materials to its cute details, so every little bear, bunny, 
+              and friend can bring warmth and happiness to someone special. At LittleBear, we believe that even the 
+              smallest toy can create a big smile and a lasting memory.
             </p>
           </div>
           <div className="bg-white rounded-2xl border border-stone-100 shadow-sm p-6">
             <h2 className="font-bold text-lg text-stone-900 mb-3">Eco-friendly &amp; conscious</h2>
             <p className="text-sm text-stone-500 leading-relaxed">
-              Today, our collection has grown, but our process remains remarkably unchanged. We work entirely
-              alongside local suppliers to minimize transport footprints and donate a portion of all proceeds
-              directly to children's health and nature preservation foundations.
+              As LittleBear grows, our goal stays the same: to bring soft, adorable, and joyful toys to every customer. 
+              We carefully choose our products and focus on quality, comfort, and beautiful designs. From a tiny gift to 
+              a special companion, every LittleBear toy is made to bring a little more happiness into your day.
             </p>
           </div>
         </div>

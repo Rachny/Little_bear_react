@@ -96,6 +96,9 @@ export default function CartDrawer() {
             <button onClick={checkout} disabled={!cart.length} className="mt-4 w-full rounded-xl bg-orange-500 hover:bg-orange-600 disabled:bg-stone-300 text-white py-3 font-bold flex items-center justify-center gap-2">
               View cart & checkout <ArrowRight size={17}/>
             </button>
+            <button onClick={() => setOpen(false)} className="mt-2 w-full rounded-xl border border-stone-200 hover:bg-stone-100 text-stone-600 py-3 font-semibold">
+              Cancel
+            </button>
             {cart.length > 0 && <button onClick={() => { clearCart(); setCart([]); }} className="w-full mt-2 py-2 text-sm text-stone-400 hover:text-red-500">Clear cart</button>}
           </div>
         </div>

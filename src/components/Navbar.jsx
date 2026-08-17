@@ -253,7 +253,7 @@ function Navbar() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
             <ul className="space-y-1">
               <li><NavLink to="/" className={mobileNavClass}>HOME</NavLink></li>
-              <li><NavLink to="/shop" className={mobileNavClass}>SERVICES</NavLink></li>
+              <li><NavLink to="/shop" className={mobileNavClass}>SERVICES & SHOP</NavLink></li>
               <li><NavLink to="/about" className={mobileNavClass}>ABOUT US</NavLink></li>
               <li><NavLink to="/contact" className={mobileNavClass}>CONTACT US</NavLink></li>
             </ul>
